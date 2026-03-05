@@ -1,72 +1,70 @@
 # Excel Payslip Automation System
 
-Automated HR payroll distribution system built with Excel VBA.
+An automated HR payroll distribution system built using Excel VBA.
 
-## Overview
+This project was developed to solve a common HR operational problem: 
+manually exporting hundreds of employee payslips every month.
 
-This project automates payslip generation and distribution for large organizations.
+The system automatically generates PDF payslips for each employee, organizes them by business unit and outlet, and prepares files for distribution.
 
-Features include:
+Processing 300+ employees now takes less than 1 minute.
 
-- Automatic PDF generation per employee
-- Auto folder structure per Business Unit and Outlet
-- Duplicate prevention system
-- Email distribution list generation
-- ZIP packaging per outlet
-- Ultra-robust header detection
-- Dynamic employee selection using index system
-
-The system can process 300+ employees within seconds.
-
-## Problem Solved
-
-HR teams often manually export payslips one by one.  
-This project automates the entire process.
-
-Before:
-Manual export → 2-3 hours work
-
-After:
-Fully automated → under 1 minute
+---
 
 ## Key Features
 
-• Automatic PDF generation  
-• Dynamic data detection  
-• Payroll index navigation system  
-• Outlet-based file grouping  
-• Batch ZIP compression  
-• Email distribution preparation  
-• Enterprise-ready Excel Add-in  
+• Automatic PDF generation for each employee  
+• Auto-detect payroll data headers  
+• Dynamic employee selection via index system  
+• Folder grouping by Business Unit and Outlet  
+• Automatic ZIP compression per outlet  
+• Duplicate file prevention  
+• Email distribution list generation  
 
-## Tech Stack
+---
 
-- Excel VBA
-- File System Automation
-- Shell ZIP integration
-- HR data processing logic
-
-## System Flow
+## System Workflow
 
 1. HR opens payroll template
-2. Add-in scans employee database
-3. System loops employee index
-4. Payslip generated automatically
+2. Add-in scans employee dataset
+3. System loops through employee index
+4. Payslip template automatically updates
 5. PDF exported per employee
 6. Files grouped per outlet
-7. ZIP generated per outlet
-8. Email distribution file created
+7. ZIP package generated
+8. Email distribution list created
+
+![Flowchart](diagrams/system-flowchart.png)
+
+---
 
 ## Example Output Structure
 
 EXPORT_PDF
- ├─ Unit_Bisnis_A
- │   ├─ Outlet_1
- │   │   ├─ Employee_A.pdf
- │   │   ├─ Employee_B.pdf
- │   │   └─ Outlet_1.zip
+ ├── Unit_Business_A
+ │    ├── Outlet_A
+ │    │     ├── Employee_1.pdf
+ │    │     ├── Employee_2.pdf
+ │    │     └── Outlet_A.zip
+
+---
+
+## Tech Stack
+
+Excel VBA  
+File System Automation  
+Shell ZIP Integration  
+HR Payroll Data Processing
+
+---
+
+## Screenshots
+
+![Automation Process](screenshots/automation-process.png)
+
+---
 
 ## Author
 
-Zenobius Oktavianus Setiawan 
-Data Analyst | Automation Enthusiast
+Zenobius Oktavianus
+Data Analyst | Process Automation Enthusiast
