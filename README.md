@@ -66,10 +66,6 @@ EXPORT_PDF
  │   │   ├─ Employee_B.pdf
  │   │   └─ Outlet_1.zip
 
-## Screenshots
-
-(put screenshots here)
-
 ## Author
 
 Zenobius Oktavianus Setiawan 
