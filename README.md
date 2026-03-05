@@ -1,5 +1,10 @@
 # Excel Payslip Automation System
 
+![Excel](https://img.shields.io/badge/Tool-Excel-green)
+![VBA](https://img.shields.io/badge/Automation-VBA-blue)
+![Automation](https://img.shields.io/badge/Process-Automated-orange)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+
 An automated HR payroll distribution system built using Excel VBA.
 
 This project was developed to solve a common HR operational problem: 
@@ -34,9 +39,21 @@ Processing 300+ employees now takes less than 1 minute.
 7. ZIP package generated
 8. Email distribution list created
 
-![Flowchart](diagrams/system-flowchart.png)
+```mermaid
+flowchart LR
 
----
+A[Employee Payroll Data Excel Sheet] --> B[VBA Add In Engine]
+
+B --> C[Generate Payslip Template]
+
+C --> D[Export Individual PDF]
+
+D --> E[Match Employee Email]
+
+E --> F[Organize Files Per Outlet]
+
+F --> G[Prepare Email Distribution]
+```
 
 ## Example Output Structure
 
@@ -60,7 +77,7 @@ HR Payroll Data Processing
 
 ## Screenshots
 
-![Automation Process](screenshots/automation-process.png)
+![Automation Process](screenshots/notifikasi_berhasil_export.JPG) ![Automation Process](screenshots/folder_hasil_export_outlet.JPG) ![Automation Process](screenshots/hasil_export_pdf.JPG)
 
 ---
 
